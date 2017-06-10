@@ -1,5 +1,5 @@
-Segmenter 1.0
-#############
+# Segmenter 1.0
+
 This software package contains software to segment data from RGBD-sensors, such as Microsoft Kinect or Asus Xtion. 
 Data abstraction and segmentation of objects is done on four levels of abstraction. The input data gets pre-segmented
 by  calculation of surface normals and recursive clustering of neighbouring pixels to planar patches. On the
@@ -12,22 +12,21 @@ There are different demo-apps implemented to test different parts of the softwar
 of README) shows results at the end of a certain processing step.
 
 
-Related papers
-##############
+# Related papers
 [Richtsfeld2012] Segmentation of Unknown Objects in Indoor Environments. Richtsfeld A., Mörwald T., Prankl J.,
 Zillich M. and Vincze M. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2012
 
 
-Prerequisites
-#############
+# Prerequisites
+
 The software package is designed and tested under Linux (11.10 and 12.04). Installation of OpenCV (> Vers. 2.4.1)
 and installation of the pcl-trunk (Revision: 8746) (www.pointclouds.org) is mandatory. 
 The following Linux (Ubuntu) packages are required:
 - TBA
 
 
-Installation
-############
+# Installation
+
 Open a console session and go to the root of the software package. Then:
 	$ make build
 	$ cd build
@@ -39,8 +38,8 @@ Uninstall the software:
 	$ sudo make uninstall
 
 
-Run the demos
-#############
+# Run the demos
+
 
 For all apps you can use the option '-h' to get help. There are two modis to start the applications:
 
@@ -93,8 +92,8 @@ Start the demo on a console:
 Press 'F9' to process single image, 'h' to get help.
 
 
-Using the software
-##################
+# Using the software
+
 We also provide a interface to use the segmentation in your software. Link the produced library 'v4rSurfaceSegmenter'
 to your C++ project and add the folling to your code:
 
@@ -114,8 +113,8 @@ the resulting segmentation:
 	  processPointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr &pcl_cloud);
 
 
-Citation
-########
+# Citation
+
 If you are using the software for evaluation, please cite:
 
 [Richtsfeld2012a] Segmentation of Unknown Objects in Indoor Environments. Richtsfeld A., Mörwald T., Prankl J.,
